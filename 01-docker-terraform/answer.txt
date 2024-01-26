@@ -1,0 +1,60 @@
+## Question 1. Knowing docker tags
+-- rm 
+
+## Question 2. Understanding docker first run 
+0.42.0
+
+
+
+## Question 3. Count records 
+15612
+
+select count(*) from green_taxi 
+where lpep_pickup_datetime::timestamp::date = '2019-09-18'  and
+lpep_dropoff_datetime::timestamp::date = '2019-09-18';
+
+or 
+
+select count(*) from green_taxi 
+where lpep_pickup_datetime::date = '2019-09-18'  and
+lpep_dropoff_datetime::date = '2019-09-18';
+
+
+## Question 4. Largest trip for each day
+2019-09-26
+
+select lpep_pickup_datetime::date, trip_distance from green_taxi
+order by trip_distance desc limit 10 ;
+
+## Question 5. The number of passengers
+
+- "Brooklyn" "Manhattan" "Queens"
+
+select sum(total_amount), t1."Borough"   from green_taxi  g
+inner join taxi_zone t1 on
+t1."LocationID" = g."PULocationID"
+inner join taxi_zone t2 on
+t2."LocationID" = g."DOLocationID"
+where cast(lpep_pickup_datetime as date) = '2019-09-18'
+and t1."Borough" not in ('Unknown')
+and t2."Borough" not in ('Unknown')
+group by t1."Borough";
+
+
+
+## Question 6. Largest tip
+
+- JFK Airport
+
+
+select  t2."Zone", max(tip_amount)  from green_taxi  g
+inner join taxi_zone t1 on
+t1."LocationID" = g."PULocationID"
+inner join taxi_zone t2 on
+t2."LocationID" = g."DOLocationID"
+where date_part('year', lpep_pickup_datetime)  = '2019'
+and date_part( 'month',lpep_pickup_datetime  ) = '09'
+and t1."Zone"  in ('Astoria')
+group by  t2."Zone"
+order by max(tip_amount) desc
+limit 1 
