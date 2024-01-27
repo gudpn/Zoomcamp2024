@@ -10,12 +10,20 @@ services:
       - "./ny_taxi_postgres_data:/var/lib/postgresql/data:rw"
     ports:
       - "5432:5432"
+    networks: 
+          - pg-network
   pgadmin:
-    container_name: pgAdmin
+    container_name: pgadmin
     image: dpage/pgadmin4
     environment:
       - PGADMIN_DEFAULT_EMAIL=admin@admin.com
       - PGADMIN_DEFAULT_PASSWORD=root
     ports:
       - "8080:80"
-    
+    depends_on:
+            - pgdatabase
+    networks: 
+      - pg-network
+networks: 
+  pg-network: 
+    name: pg-network
