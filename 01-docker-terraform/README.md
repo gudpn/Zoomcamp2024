@@ -63,5 +63,5 @@ Alternatively, you can directly run the ingest_HW1.py script without using Docke
     --turl=${tURL}
 
 ```
-Note: The parameters used in the docker run command, such as <user>, <password>, <host>, <port> and <db>, are based on the configuration specified in the docker-compose.yaml file. Ensure to replace them with accurate values as per your configuration.
+Note: The parameters used in the docker run command, such as user, password, host, port and db, are based on the configuration specified in the docker-compose.yaml file. Ensure to replace them with accurate values as per your configuration.
 
