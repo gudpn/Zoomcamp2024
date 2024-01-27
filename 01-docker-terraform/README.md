@@ -44,7 +44,7 @@ There are two approaches to load the dataset and add it to the database.
         --turl=${tURL}
 
 ```
-Note: The parameters used in the docker run command, such as <network>, <user>, <password>, <host>, <port> and <db>, are based on the configuration specified in the docker-compose.yaml file. Ensure to replace them with accurate values as per your configuration.
+Note: The parameters used in the docker run command, such as network, user, password, host, port and db, are based on the configuration specified in the docker-compose.yaml file. Ensure to replace them with accurate values as per your configuration.
 
 ## 2. Run the `ingest_HW1.py` directly. 
 Alternatively, you can directly run the ingest_HW1.py script without using Dockerfile:
