@@ -4,7 +4,7 @@ Welcome to my Bootcamp Homework Repository! Here, you'll find a detailed log of 
 
 
 * [Module 1: Containerization and Infrastructure as Code](01-Basic%20Setup%20with%20docker%2C%20terraform/)
-* [Module 2: Workflow Orchestration](#https://github.com/gudpn/Zoomcamp2024/tree/main/02-Workflow%20Orchestration%20with%20Mage)
+* [Module 2: Workflow Orchestration](02-Workflow%20Orchestration%20with%20Mage/)
 * [Workshop 1: Data Ingestion](#workshop-1-data-ingestion)
 * [Module 3: Data Warehouse](#module-3-data-warehouse)
 * [Module 4: Analytics Engineering](#module-4-analytics-engineering)
