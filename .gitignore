@@ -1,3 +1,8 @@
 data-engineering-zoomcamp/
 mage-zoompcamp/
 02-Workflow Orchestration with Mage/variables.tf
+.json
+*.tfstate
+*.tfstate.*
+**.terraform
+**.terraform.lock.*
