@@ -28,12 +28,7 @@ def transform(data, *args, **kwargs):
     data['lpep_pickup_date'] = data['lpep_pickup_datetime'].dt.date
 
     #Rename columns in Camel Case to Snake Case, e.g. VendorID to vendor_id.
-    data.columns = (data.columns
-                    .str.replace(' ','_')
-                    .str.lower()
-                    )
-    
-    """
+
     data = data.rename(columns=
         {
             'VendorID'		:'vendor_id'		,
@@ -41,7 +36,7 @@ def transform(data, *args, **kwargs):
             'PULocationID'	:'pu_location_id'	,
             'DOLocationID'	:'do_location_id'	    
         })
-    """
+
     print(data["vendor_id"].unique())
     return data
 
