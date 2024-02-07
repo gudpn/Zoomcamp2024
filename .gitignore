@@ -6,3 +6,5 @@ mage-zoompcamp/
 *.tfstate.*
 **.terraform
 **.terraform.lock.*
+*.duckdb
+*.duckdb.*
