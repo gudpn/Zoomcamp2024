@@ -7,4 +7,3 @@ mage-zoompcamp/
 **.terraform.lock.*
 *.duckdb
 *.duckdb.*
-/mage-zoomcamp
