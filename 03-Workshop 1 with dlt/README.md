@@ -17,8 +17,8 @@ Please make sure you have already installed the following lib.
 ```
 You can run the python script or the notebook script. 
 
-# Extra notes
-I have converted the notebook file into python script by using the following command. 
+### Extra notes
+For convenience, the notebook file has been converted into a Python script using the following command:
 
 ```
     jupyter nbconvert --to python homework_starter.ipynb 
