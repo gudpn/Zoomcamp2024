@@ -9,3 +9,5 @@ mage-zoompcamp/
 *.duckdb.*
 /mage-zoomcamp
 /dbt_packages
+*.json
+.env
