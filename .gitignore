@@ -8,3 +8,4 @@ mage-zoompcamp/
 *.duckdb
 *.duckdb.*
 /mage-zoomcamp
+/dbt_packages
