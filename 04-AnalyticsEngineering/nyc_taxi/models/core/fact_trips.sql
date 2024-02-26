@@ -4,6 +4,7 @@
     )
 }}
 
+
 with green_tripdata as (
     select *, 
         'Green' as service_type
