@@ -13,6 +13,8 @@ with
 select
 
 
+
+
     trips_unioned.service_type,
     trips_unioned.dispatching_base_num,
     trips_unioned.pickup_datetime as pickup_datetime,

@@ -23,6 +23,8 @@ renamed as (
 
 )
 
+
+
 select * from renamed
 -- dbt build --select <model.sql> --vars '{is_test_run: false}'
 {% if var('is_test_run', default=true) %}
